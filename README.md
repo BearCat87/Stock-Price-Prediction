@@ -118,7 +118,7 @@ goog.plot_stock()
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_13_1.png)
+![png](images/Stock%20Prediction%20Project_13_1.png)
 
 
 If you pay attention, you'll notice that the dates for the Stocker object are not up-to-date. It stops at 2018--3-27. Taking close look at the actual module code, we'll see that the data is taken from Quandl's WIKI exchange. Perhaps the data is not kept up to date? 
@@ -135,7 +135,7 @@ model, model_data = goog.create_prophet_model(days=90)
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_16_1.png)
+![png](images/Stock%20Prediction%20Project_16_1.png)
 
 
 ## Evaluation of Predictions
@@ -163,7 +163,7 @@ goog.evaluate_prediction()
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_18_1.png)
+![png](images/Stock%20Prediction%20Project_18_1.png)
 
 
 This is absolutely horrible!
@@ -181,7 +181,7 @@ goog.changepoint_prior_analysis(changepoint_priors=[0.001, 0.05, 0.1, 0.2])
 ```
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_21_0.png)
+![png](images/Stock%20Prediction%20Project_21_0.png)
 
 
 
@@ -200,11 +200,11 @@ goog.changepoint_prior_validation(start_date='2016-01-04', end_date='2017-01-03'
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_22_1.png)
+![png](images/Stock%20Prediction%20Project_22_1.png)
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_22_2.png)
+![png](images/Stock%20Prediction%20Project_22_2.png)
 
 
 ## Evaluating Refined Model
@@ -230,7 +230,7 @@ goog.evaluate_prediction()
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_24_1.png)
+![png](images/Stock%20Prediction%20Project_24_1.png)
 
 
 ## Testing Our Luck in the Stock Market
@@ -265,7 +265,7 @@ goog.evaluate_prediction(nshares=1000)
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_26_2.png)
+![png](images/Stock%20Prediction%20Project_26_2.png)
 
 
 This shows that it's better to simply invest for the long term.
@@ -2531,7 +2531,7 @@ plt.plot(df['Date'], df['Adj. Close'], label='Close Price history')
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_42_1.png)
+![png](images/Stock%20Prediction%20Project_42_1.png)
 
 
 
@@ -2656,7 +2656,7 @@ plt.plot(test[['Adj. Close', 'Predictions']])
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_51_2.png)
+![png](images/Stock%20Prediction%20Project_51_2.png)
 
 
 # Simple Linear Regression
@@ -5437,7 +5437,7 @@ plt.plot(test[['Adj. Close', 'Predictions']])
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_67_2.png)
+![png](images/Stock%20Prediction%20Project_67_2.png)
 
 
 # k-Nearest Neighbours
@@ -5526,7 +5526,7 @@ plt.plot(test[['Adj. Close', 'Predictions']])
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_74_2.png)
+![png](images/Stock%20Prediction%20Project_74_2.png)
 
 
 # Multilayer Perceptron
@@ -6667,5 +6667,5 @@ plt.plot(test[['Adj. Close', 'Predictions']])
 
 
 
-![png](Stock%20Prediction%20Project_files/Stock%20Prediction%20Project_88_2.png)
+![png](images/Stock%20Prediction%20Project_88_2.png)
 
